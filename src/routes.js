@@ -6,6 +6,7 @@ import RTLPage from "views/RTL/RTLPage.js";
 import Profile from "views/Dashboard/Profile.js";
 import SignIn from "views/Pages/SignIn.js";
 import SignUp from "views/Pages/SignUp.js";
+import SignOut from "views/Pages/SignOut.js";
 
 import {
   HomeIcon,
@@ -72,6 +73,7 @@ var dashRoutes = [
         icon: <DocumentIcon color="inherit" />,
         component: SignIn,
         layout: "/auth",
+        hide: true
       },
       {
         path: "/signup",
@@ -80,6 +82,15 @@ var dashRoutes = [
         icon: <RocketIcon color="inherit" />,
         secondaryNavbar: true,
         component: SignUp,
+        layout: "/auth",
+        hide: true
+      },
+      {
+        path: "/signout",
+        name: "Logout",
+        rtlName: "لوحة القيادة",
+        icon: <RocketIcon color="inherit" />,
+        component: SignOut,
         layout: "/auth",
       },
     ],

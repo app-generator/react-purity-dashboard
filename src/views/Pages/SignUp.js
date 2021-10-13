@@ -15,14 +15,60 @@ import {
 } from "@chakra-ui/react";
 // Assets
 import BgSignUp from "assets/img/BgSignUp.png";
-import React from "react";
+import React, { useState } from "react";
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
+import AuthApi from "../../api/auth";
+import { useHistory } from "react-router-dom";
+
 function SignUp() {
+  const history = useHistory();
+
   const titleColor = useColorModeValue("teal.300", "teal.200");
   const textColor = useColorModeValue("gray.700", "white");
   const bgColor = useColorModeValue("white", "gray.700");
   const bgIcons = useColorModeValue("teal.200", "rgba(255, 255, 255, 0.5)");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [buttonText, setButtonText] = useState("Sign up");
+  const [error, setError] = useState(undefined);
+
+  const register = async (event) => {
+    if (event) {
+      event.preventDefault();
+    }
+    if (name === "") {
+      return setError("You must enter your name.");
+    }
+    if (email === "") {
+      return setError("You must enter your email.");
+    }
+    if (password === "") {
+      return setError("You must enter a password.");
+    }
+    try {
+      setButtonText("Signing up");
+      let response = await AuthApi.Register({
+        username: name,
+        email,
+        password,
+      });
+      if (response.data && response.data.success === false) {
+        setButtonText("Sign up");
+        return setError(response.data.msg);
+      }
+      return history.push("/auth/signin");
+    } catch (err) {
+      console.log(err);
+      setButtonText("Sign up");
+      if (err.response) {
+        return setError(err.response.data.msg);
+      }
+      return setError("There has been an error.");
+    }
+  };
+
   return (
     <Flex
       direction="column"
@@ -172,6 +218,10 @@ function SignUp() {
               placeholder="Your full name"
               mb="24px"
               size="lg"
+              onChange={(event) => {
+                setName(event.target.value);
+                setError(undefined);
+              }}
             />
             <FormLabel ms="4px" fontSize="sm" fontWeight="normal">
               Email
@@ -184,6 +234,10 @@ function SignUp() {
               placeholder="Your email address"
               mb="24px"
               size="lg"
+              onChange={(event) => {
+                setEmail(event.target.value);
+                setError(undefined);
+              }}
             />
             <FormLabel ms="4px" fontSize="sm" fontWeight="normal">
               Password
@@ -196,6 +250,10 @@ function SignUp() {
               placeholder="Your password"
               mb="24px"
               size="lg"
+              onChange={(event) => {
+                setPassword(event.target.value);
+                setError(undefined);
+              }}
             />
             <FormControl display="flex" alignItems="center" mb="24px">
               <Switch id="remember-login" colorScheme="teal" me="10px" />
@@ -203,6 +261,18 @@ function SignUp() {
                 Remember me
               </FormLabel>
             </FormControl>
+            <h4
+              style={{
+                fontSize: ".9em",
+                color: "red",
+                textAlign: "center",
+                fontWeight: 400,
+                transition: ".2s all",
+                marginBottom: '1em'
+              }}
+            >
+              {error}
+            </h4>
             <Button
               type="submit"
               bg="teal.300"
@@ -218,8 +288,9 @@ function SignUp() {
               _active={{
                 bg: "teal.400",
               }}
+              onClick={register}
             >
-              SIGN UP
+              {buttonText}
             </Button>
           </FormControl>
           <Flex
