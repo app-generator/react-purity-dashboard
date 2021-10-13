@@ -28,33 +28,25 @@ export default function Footer(props) {
         mb={{ base: "20px", xl: "0px" }}
       >
         &copy; {1900 + new Date().getYear()},{" "}
-        <Text as="span">
-          {document.documentElement.dir === "rtl"
-            ? " مصنوع من ❤️ بواسطة"
-            : "Made with ❤️ by "}
-        </Text>
         <Link
           // color={linkTeal}
           color="teal.400"
-          href="https://www.creative-tim.com"
+          href="https://bit.ly/3fKQZaL"
           target="_blank"
         >
           {document.documentElement.dir === "rtl"
             ? " توقيت الإبداعية"
             : "Creative Tim "}
         </Link>
-        &
+        {' Coded by '} 
         <Link
           // color={linkTeal}
           color="teal.400"
-          href="https://www.simmmple.com"
+          href="https://appseed.us"
           target="_blank"
         >
-          {document.documentElement.dir === "rtl" ? "سيممبل " : " Simmmple"}
+          {document.documentElement.dir === "rtl" ? "AppSeed" : "AppSeed"}
         </Link>
-        {document.documentElement.dir === "rtl"
-          ? "للحصول على ويب أفضل"
-          : " for a better web"}
       </Text>
       <List display="flex">
         <ListItem
@@ -63,10 +55,12 @@ export default function Footer(props) {
             md: "44px",
           }}
         >
-          <Link color="gray.400" href="https://www.creative-tim.com">
+          <Link href="https://appseed.us/product/node-js-react-purity-dashboard"
+            target="_blank"
+            color="gray.400">
             {document.documentElement.dir === "rtl"
-              ? "توقيت الإبداعية"
-              : "Creative Tim"}
+              ? "Product"
+              : "Product"}
           </Link>
         </ListItem>
         <ListItem
@@ -75,31 +69,10 @@ export default function Footer(props) {
             md: "44px",
           }}
         >
-          <Link color="gray.400" href="https://www.simmmple.com">
-            {document.documentElement.dir === "rtl" ? "سيممبل" : "Simmmple"}
-          </Link>
-        </ListItem>
-        <ListItem
-          me={{
-            base: "20px",
-            md: "44px",
-          }}
-        >
-          <Link
-            color="gray.400"
-            href="#blog"
-            href="https://creative-tim.com/blog"
-          >
-            {document.documentElement.dir === "rtl" ? "مدونة" : "Blog"}
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link
-            color="gray.400"
-            href="#license"
-            href="https://www.creative-tim.com/license"
-          >
-            {document.documentElement.dir === "rtl" ? "رخصة" : "License"}
+          <Link color="gray.400"
+            target="_blank"
+            href="https://appseed.us/support">
+            {document.documentElement.dir === "rtl" ? "Support" : "Support"}
           </Link>
         </ListItem>
       </List>

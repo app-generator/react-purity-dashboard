@@ -26,11 +26,12 @@ export function SidebarHelp(props) {
         Need help?
       </Text>
       <Text fontSize="xs" color="white" mb="10px">
-        Please check our docs
+      Access Product Page
       </Text>
       <Link
+        target="_blank"
         w="100%"
-        href="https://demos.creative-tim.com/docs-purity-ui-dashboard/"
+        href="https://appseed.us/product/node-js-react-purity-dashboard"
       >
         <Button
           fontSize="10px"
@@ -48,7 +49,7 @@ export function SidebarHelp(props) {
           }}
           color="black"
         >
-          DOCUMENTATION
+          React Chakra Purity
         </Button>
       </Link>
     </Flex>
