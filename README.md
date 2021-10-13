@@ -17,7 +17,7 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 > Links
 
 - [React Purity Dashboard](https://appseed.us/product/node-js-react-purity-dashboard) - product page
-- [React Purity Dashboard](https://node-js-react-purity-dashboard.appseed-srv1.com/) - LIVE Demo
+- [React Purity Dashboard](https://node-js-react-purity-dashboard.appseed-srv1.com/#/auth/signin) - LIVE Demo
 - Support via **Github** (issues tracker) and [Discord](https://appseed.us/support) - LIVE Assistance 
 
 <br />
