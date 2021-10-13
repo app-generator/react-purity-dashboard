@@ -32,7 +32,7 @@ PRO versions include **Premium [React Kits](https://appseed.us/apps/react)**, Li
 
 <br /> 
 
-![React Soft Dashboard - Open-source full-stack product](https://user-images.githubusercontent.com/51070104/136687466-1dfeeb6b-d474-45df-879b-0857b27eb615.gif) 
+![React Purity Dashboard - Open-source full-stack prodyct crafted by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/137163201-e9014a78-9583-44ba-8912-4c2a1601d388.png)
 
 <br >
 
