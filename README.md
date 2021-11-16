@@ -20,7 +20,28 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 - [React Purity Dashboard](https://node-js-react-purity-dashboard.appseed-srv1.com/#/auth/signin) - LIVE Demo
 - Support via **Github** (issues tracker) and [Discord](https://appseed.us/support) - LIVE Assistance 
 
-<br /> 
+<br />
+
+## Quick Start in [Docker](https://www.docker.com/)
+
+> Get the code
+
+```bash
+$ git clone https://github.com/app-generator/react-purity-dashboard.git
+$ cd react-purity-dashboard
+```
+
+> Start the app in Docker
+
+```bash
+$ docker-compose pull  # download dependencies 
+$ docker-compose build # local set up
+$ docker-compose up    # start the app 
+```
+
+The React UI starts on port `3000` and expects an API server on port `5000` (saved in configuration).
+
+<br />
 
 ![React Purity Dashboard - Open-source full-stack prodyct crafted by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/137163880-b117bb7b-daab-45dc-ae88-956cbe966d02.gif)
 
