@@ -301,16 +301,7 @@ function SignUp() {
             mt="0px"
           >
             <Text color={textColor} fontWeight="medium">
-              Already have an account?
-              <Link
-                color={titleColor}
-                as="span"
-                ms="5px"
-                href="#"
-                fontWeight="bold"
-              >
-                Sign In
-              </Link>
+              Open-source Full-Stack Seed Project
             </Text>
           </Flex>
         </Flex>

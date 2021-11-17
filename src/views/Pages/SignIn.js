@@ -222,10 +222,7 @@ function SignIn() {
                 mt="0px"
               >
                 <Text color={textColor} fontWeight="medium">
-                  Don't have an account?
-                <Link href={`${process.env.PUBLIC_URL}/auth/signup`} color={titleColor} as="span" ms="5px" fontWeight="bold">
-                    Sign Up
-                </Link>
+                  Open-source Full-Stack Seed Project 
                 </Text>
               </Flex>
             </Flex>
