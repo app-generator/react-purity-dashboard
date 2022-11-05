@@ -1,26 +1,38 @@
-# [React Purity Dashboard](https://appseed.us/product/node-js-react-purity-dashboard)
+# [React Purity Dashboard](https://appseed.us/product/purity-dashboard/api-server-nodejs/react/)
 
 Start your Development with an Innovative Admin Template for **Chakra UI** and **React**. Purity UI Dashboard is built with over 70 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using Chakra's style props. The product comes with a simple JWT authentication flow: login/register/logout. 
 
+- 👉 [React Purity Dashboard](https://appseed.us/product/purity-dashboard/api-server-nodejs/react/) - product page
+- 👉 [React Purity Dashboard](https://node-js-react-purity-dashboard.appseed-srv1.com/#/auth/signin) - LIVE Demo
+
 <br />
 
-> Features
+> 🚀 Built with **[React App Generator](https://appseed.us/generator/react/)**
 
-- Innovative Chakra UI Design - Creafted by [Creative-Tim](https://bit.ly/3fKQZaL)
-- React, Redux, Redux-persist
-- Authentication: JWT Login/Register/Logout
-- Full-stack ready using **[Node JS API Server](https://github.com/app-generator/api-server-nodejs)** (open-source project)
+- ✅ Innovative Chakra UI Design - Creafted by [Creative-Tim](https://bit.ly/3fKQZaL)
+- ✅ React, Redux, Redux-persist
+- ✅ Authentication: JWT Login/Register/Logout
+- ✅ Full-stack ready using **[Node JS API Server](https://github.com/app-generator/api-server-nodejs)** (open-source project)
   - Features: Typescript / SQLite / TypeORM / Joy (validation) / Passport library - `passport-jwt` strategy.
 
 <br />
 
-> Links
+## Tests
 
-- [React Purity Dashboard](https://appseed.us/product/node-js-react-purity-dashboard) - product page
-- [React Purity Dashboard](https://node-js-react-purity-dashboard.appseed-srv1.com/#/auth/signin) - LIVE Demo
-- Support via **Github** (issues tracker) and [Discord](https://appseed.us/support) - LIVE Assistance 
+> `Compatibility matrix` tested with [Render API Wrapper](https://github.com/app-generator/deploy-automation-render).
+
+| NodeJS | NPM | YARN | 
+| --- | --- | --- |  
+| `v14.0.0` | ❌ | ✅ |
+| `v16.0.0` | ✅ | ✅ | 
+| `v18.0.0` | ❌ | ❌ | 
 
 <br />
+
+
+![React Purity Dashboard - Open-source full-stack prodyct crafted by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/137163880-b117bb7b-daab-45dc-ae88-956cbe966d02.gif)
+
+<br >
 
 ## Quick Start in [Docker](https://www.docker.com/)
 
@@ -42,10 +54,6 @@ $ docker-compose up    # start the app
 The React UI starts on port `3000` and expects an API server on port `5000` (saved in configuration).
 
 <br />
-
-![React Purity Dashboard - Open-source full-stack prodyct crafted by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/137163880-b117bb7b-daab-45dc-ae88-956cbe966d02.gif)
-
-<br >
 
 > **Note**: This product can be used with other API Servers for a complete full-stack experience. **ALL API servers use a unified interface**
 
