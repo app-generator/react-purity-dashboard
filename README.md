@@ -23,7 +23,7 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 
 | NodeJS | NPM | YARN | 
 | --- | --- | --- |  
-| `v14.0.0` | ❌ | ✅ |
+| `v14.0.0` | ❌ | ❌ |
 | `v16.0.0` | ✅ | ✅ | 
 | `v18.0.0` | ❌ | ❌ | 
 
