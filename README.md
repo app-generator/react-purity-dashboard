@@ -19,7 +19,7 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 
 ## Tests
 
-> `Compatibility matrix` tested with [Render API Wrapper](https://github.com/app-generator/deploy-automation-render).
+> `Compatibility matrix` using Ubuntu `18.04 LTS` as reference.
 
 | NodeJS | NPM | YARN | 
 | --- | --- | --- |  
