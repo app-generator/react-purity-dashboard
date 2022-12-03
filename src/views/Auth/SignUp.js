@@ -282,9 +282,8 @@ function SignUp() {
               Already have an account?
               <Link
                 color={titleColor}
-                as='span'
                 ms='5px'
-                href='/auth/signin'
+                href='/auth/signup#/auth/signin'
                 fontWeight='bold'>
                 Sign In
               </Link>

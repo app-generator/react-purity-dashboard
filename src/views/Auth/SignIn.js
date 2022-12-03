@@ -21,7 +21,10 @@ import { useAuth } from "../../auth-context/auth.context";
 import { useHistory } from "react-router-dom";
 
 function SignIn() {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    'email': '',
+    'password': ''
+  });
   const [error, setError] = useState("");
 
   const history = useHistory();
@@ -124,6 +127,7 @@ function SignIn() {
                 size='lg'
                 onChange={handleChange}
                 name="email"
+                value={formData?.email}
               />
               <FormLabel ms='4px' fontSize='sm' fontWeight='normal'>
                 Password
@@ -137,6 +141,7 @@ function SignIn() {
                 size='lg'
                 onChange={handleChange}
                 name="password"
+                value={formData?.password}
               />
               <FormControl display='flex' alignItems='center'>
                 <Switch id='remember-login' colorScheme='teal' me='10px' />
@@ -185,7 +190,7 @@ function SignIn() {
               mt='0px'>
               <Text color={textColor} fontWeight='medium'>
                 Don't have an account?
-                <Link color={titleColor} href="/auth/signup" as='span' ms='5px' fontWeight='bold'>
+                <Link color={titleColor} href="/auth/signup#/auth/signup" ms='5px' fontWeight='bold'>
                   Sign Up
                 </Link>
               </Text>
