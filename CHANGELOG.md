@@ -1,5 +1,11 @@
 # Change Log
 
+## [v1.0.7] 2022-12-03
+### Changes
+
+- UI/UX Changes
+- Minor Fixes
+
 ## [v1.0.6] 2022-12-03
 ### Changes
 

@@ -112,7 +112,7 @@ function SignIn() {
               color={textColor}
               fontWeight='bold'
               fontSize='14px'>
-              Enter your email and password to sign in
+              add your credentials
             </Text>
             <FormControl>
               <FormLabel ms='4px' fontSize='sm' fontWeight='normal'>
@@ -190,7 +190,7 @@ function SignIn() {
               mt='0px'>
               <Text color={textColor} fontWeight='medium'>
                 Don't have an account?
-                <Link color={titleColor} href="/auth/signup#/auth/signup" ms='5px' fontWeight='bold'>
+                <Link color={titleColor} href="#/auth/signup" ms='5px' fontWeight='bold'>
                   Sign Up
                 </Link>
               </Text>
