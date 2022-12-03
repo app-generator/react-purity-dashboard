@@ -17,6 +17,10 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 
 <br />
 
+![React Purity Dashboard - Open-source full-stack prodyct crafted by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/205427640-007904ec-9cd5-4060-86c6-47675b36cda1.png)
+
+<br />
+
 ## Tests
 
 > `Compatibility matrix` using Ubuntu `18.04 LTS` as reference.
@@ -29,11 +33,6 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 | `v18.0.0` | ✅ | ✅ | 
 
 <br />
-
-
-![React Purity Dashboard - Open-source full-stack prodyct crafted by AppSeed and Creative-Tim.](https://user-images.githubusercontent.com/51070104/137163880-b117bb7b-daab-45dc-ae88-956cbe966d02.gif)
-
-<br >
 
 ## How to use it
 
