@@ -9,7 +9,7 @@ Start your Development with an Innovative Admin Template for **Chakra UI** and *
 
 > 🚀 Built with **[React App Generator](https://appseed.us/generator/react/)**
 
-- ✅ Innovative Chakra UI Design - Creafted by [Creative-Tim](https://www.creative-tim.com/?AFFILIATE=128200)
+- ✅ Innovative Chakra Design - **Crafted by [Creative-Tim](https://www.creative-tim.com/?AFFILIATE=128200)**
 - ✅ React, Redux, Redux-persist
 - ✅ Authentication: JWT Login/Register/Logout
 - ✅ Full-stack ready using **[Node JS API Server](https://github.com/app-generator/api-server-nodejs)** (open-source project)
